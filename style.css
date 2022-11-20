@@ -1,0 +1,142 @@
+body{
+    text-align:center;   
+    background: #EDF2F4;
+    font:Sans-Serif;
+}
+
+.top{
+    margin: auto;
+    padding: 10px;
+}
+
+.input1{
+    display:inline-block;
+    vertical-align:top;
+}
+.input2{
+    display:inline-block;
+    vertical-align:top;
+}
+p{
+    color:black;
+    font-size:25px;
+    margin:auto;
+    font-weight: bold;
+}
+
+input{
+    width:20vmin;
+    height:3vmin;
+    text-align:center;
+    margin:10px;
+    padding:10px;
+    font-weight: bold;
+    font-size: 17px;
+    border:2px solid black;
+}
+
+form{
+    padding:10px;
+}
+select{
+    width:20vmin;
+    min-width:100px; 
+    height:3.5vmin;
+    min-height:35px;
+    margin:10px;
+    text-align:center;
+    font-size: 20px;
+    border:2px solid black;
+   
+}
+option{
+    width:15vmin;
+    height:5vmin;
+    
+    font-size: 27px;
+}
+button{
+    margin:10px;
+    padding:10px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:30px;
+    font-weight:bold;
+    background:#4fc1e4;
+}
+
+
+.results{
+    display:inline-flex;
+    flex-wrap:wrap;
+}
+
+.results1{
+    display:inline-flex;
+}
+.results2{
+    display:inline-flex;
+}
+.results3{
+    display:inline-flex;
+}
+
+
+.plots{
+    width: 96vmin;
+    max-width:1500px;
+    margin:auto;
+}
+.plots2{
+    width: 96vmin;
+    max-width:1500px;
+    margin:auto;
+}
+
+#Alpha{
+    margin:10px;
+    padding:10px;
+    background:rgb(203, 201, 201);
+}
+#resultx{
+    margin:10px;
+    padding:10px;
+    background:rgb(203, 201, 201);
+}
+#resultT{
+    margin:10px;
+    padding:10px;
+    background:rgb(203, 201, 201);
+}
+#resulterror{
+    margin:10px;
+    padding:10px;
+    background:rgb(203, 201, 201);
+}
+
+h1{
+    margin:0px;
+    border:0px;
+    padding:30px;
+    text-align:center;
+    font: bold 350% sans-serif;
+
+}
+h2{
+    padding:20px;
+    text-align:center;
+    margin:auto;
+    font: bold 250% sans-serif;
+}
+
+/* Per treure les fletxes dels inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}

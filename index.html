@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+  
+</head>
+<body>
+    <h1>Conduction Heat Transfer: 1D bar solver</h1>
+    <h2>Input values</h2>
+    <div class="top">
+        <div class="input1">
+            <p>Length:</p>
+            <input type="number" value="1" id="L">
+            <p>Initial Temperature:</p>
+            <input type="number" value="30" id="Tini">
+            <p>Left temperature:</p>
+            <input type="number" value="100" id="Tleft">
+            <p>Right temperature:</p>
+            <input type="number" value="20" id="Tright">
+            <p>Conductivity:</p>
+            <input type="number" value="400" id="Conductivity">
+        </div>
+        <div class="input2">
+            <p>Density:</p>
+            <input type="number" value="8960" id="Density">
+            <p>Cp:</p>
+            <input type="number" value="380" id="Cp">
+            <p>TimeStep:</p>
+            <input type="number" value="0.1" id="Timestep">
+            <p>Time max:</p>
+            <input type="number" value="600" id="Tmax">
+            <p>Temporal scheme:</p>
+            <form name="choosescheme" id="choosescheme" action="">
+                <select name="scheme" id="scheme">
+                    <option value="implicit">Implicit</option>
+                    <option value="explicit">Explicit</option>
+                    <option value="Crank-Nicolson">Crank-Nicolson</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <p></p>
+    <button type="button" onclick="calculatebar()">Calculate!</button>
+    <p></p>
+    <div class="results">
+        <div class="results1">
+            <p>At x: &nbsp;</p>
+            <input type="number" value="" id="resultx">
+        </div>
+        <div class="results2">
+            <p>&nbsp;T is: &nbsp;</p>
+            <input type="number" value="" id="resultT">
+        </div>
+        <div class="results3">
+            <p>&nbsp;With an error of: &nbsp;</p>
+            <input type="number" value="" id="resulterror">
+        </div>
+    </div>
+    <div class="plots">
+        <canvas id="myChart"></canvas>
+    </div>
+    <div class="plots2">
+        <canvas id="myChart2"></canvas>
+        <script src="script.js"></script>
+    </div>
+    
+</body>
+</html>
+
